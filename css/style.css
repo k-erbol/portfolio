@@ -7,7 +7,7 @@ body { font-family: sans-serif;
 background: #202020;
 color: #DEDEDE;}
 main{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 header{
@@ -16,13 +16,14 @@ header{
     height: 80px;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 .header-liset{
     display: flex;
     justify-content: s;
 }
 .headr-rwapper{
-    width: 1200px;
+    max-width: ;width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
@@ -38,19 +39,23 @@ header{
 
     text-decoration: none;
 }
+.earninng_img{
+  max-width: 550px;
+}
 
 
 
 .hero{
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
     margin-top: 50px;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    align-items: center;
 }
 .info{
-
-    width: 60%;
     text-align: center;
+    padding: 50px;
     font-weight: 500;
 }
 
@@ -75,7 +80,8 @@ header{
 
 .earnings{
     display: flex;
-    width: 1200px;
+    flex-wrap: wrap;
+    max-width: 1200px;
     justify-content: space-around;
     margin-top: 50px;
 }
@@ -87,7 +93,7 @@ header{
 
 .contact{
     margin-top: 90px;
-    width: 1200px;
+    max-width: 1200px;
     text-align: center;
 }
 .contact-head{
@@ -215,4 +221,44 @@ header{
 }
 .footermain{
     height: 100px;
+}
+
+
+@media only screen and (max-width: 768px)  {
+
+.earning-itrm{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+  .info-head{
+
+    margin: 0 auto;
+    font-size: 40px;
+
+}
+.info-main{
+    line-height: 1;
+    margin: 0 auto;
+    font-size: 40px;
+
+}
+.hero-image{
+  width: 80%;
+}
+
+.earninng_img{
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.earnings{
+  justify-content: center;
+}
+
+.carousel-cell {
+  min-width: 300px;
+  height: 400px;
+}
 }
